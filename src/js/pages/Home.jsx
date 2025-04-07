@@ -8,7 +8,7 @@ const Home = () => {
   ]);
   const [activeLight, setActiveLight] = useState(null);
 
-  const colorOptions = ["purple", "brown", "white", "blue", "orange"];
+  const colorOptions = ["purple", "brown", "white", "blue", "orange"]; //Podría generar seguramente de alguna forma una lista de colores base y que salga aleatorio
 
   const changeLight = () => {
     const randomIndex = Math.floor(Math.random() * lights.length);
@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <div className="d-flex flex-column align-items-center mt-4">
-      <div id="sujecion" ></div>
+      <div id="sujecion"></div>
 
       <div id="card" style={{ height: `${150 + lights.length * 50}px` }}>
         {lights.map((light) => (
